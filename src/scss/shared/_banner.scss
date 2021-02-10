@@ -1,0 +1,130 @@
+
+.swiper-slide {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 180px 0;
+}
+
+.swiper-p1 {
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $white;
+}
+
+.swiper-h2 {
+    font-size: 38px;
+    line-height: 1; 
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: $white;
+}
+
+.swiper-p2 {
+    font-size: 13px;
+    line-height: 1; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.swiper-btn-container {
+    margin-top: 50px;
+}
+
+.swiper-btn-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    color: $white;
+    background-color: $mint;
+    border: 1px solid $mint;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $white;
+    }
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+    opacity: 1;
+    border: 1px solid $white;
+    background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: $white;
+}
+
+
+//BANNER BOTTOM
+
+.banner-bottom {
+    margin-top: 80px;
+}
+
+.bottom-container {
+    font-size: 0;
+    background-color: $mint;
+    :last-child {
+        border-right: none;
+    }
+}
+
+.bottom-item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 33%;
+    border-right: 1px solid $white;
+    padding: 40px 0;
+    @extend %clearfix;
+}
+
+.icon-icon-clock, .icon-icon-phone, .icon-icon-envelope {
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    color: $white;
+}
+
+.bottom-info {
+    float: right;
+    width: 69%;
+    text-align: left;
+}
+
+.bottom-info-h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: $white;
+}
+
+.bottom-info-p {
+    display: block;
+    font-size: 15px;
+    color: $white;
+    text-decoration: none;
+}
+
+@include breakpoint(phone) {
+    .banner-bottom {
+        margin-top: 10px;
+    }
+    .bottom-container {
+        :last-child {
+            border-bottom: none;
+        }
+    }
+    .bottom-item {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid $white;
+    }
+}
+
